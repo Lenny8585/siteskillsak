@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson Kasmirski | Desenvolvedor Full Stack</title>
+    <meta name="description"
+        content="Portfólio de Anderson Gustavo Dias Kasmirski, Almoxarife em transição para Desenvolvedor Full Stack. Especialista em HTML, CSS, JS, Python e MySQL.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script> <!-- Icons -->
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <a href="#" class="logo">AK<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact" class="btn-primary">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero container">
+        <div class="hero-content fade-in-up">
+            <span class="badge">Desenvolvedor em Ascensão</span>
+            <h1>Olá, eu sou <span class="gradient-text">Anderson</span></h1>
+            <p class="subtitle">De Almoxarife a <span id="typing-text"></span></p>
+            <p class="bio">Tenho 23 anos e trabalho na WEG. Transformo lógica em soluções visuais e funcionais. Pronto
+                para o próximo nível.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">Ver Projetos <i data-lucide="arrow-right"></i></a>
+                <a href="#contact" class="btn btn-outline">Fale Comigo</a>
+            </div>
+        </div>
+        <div class="hero-visual fade-in-up delay-200">
+            <div class="code-card glass">
+                <div class="card-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="card-body">
+                    <code>
+                        <span class="keyword">const</span> <span class="var">dev</span> = {<br>
+                        &nbsp;&nbsp;nome: <span class="string">'Anderson Kasmirski'</span>,<br>
+                        &nbsp;&nbsp;idade: <span class="number">23</span>,<br>
+                        &nbsp;&nbsp;empresa: <span class="string">'WEG'</span>,<br>
+                        &nbsp;&nbsp;paixao: <span class="string">'Web Development'</span><br>
+                        };
+                    </code>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre Section -->
+    <section id="about" class="section container">
+        <h2 class="section-title fade-in">Minha Jornada</h2>
+        <div class="about-grid">
+            <div class="about-card glass fade-in-up">
+                <i data-lucide="package" class="icon-lg"></i>
+                <h3>O Almoxarife</h3>
+                <p>Atualmente na WEG, desenvolvi disciplina, organização e eficiência logística. Habilidades que agora
+                    aplico na arquitetura de código.</p>
+            </div>
+            <div class="arrow-divider fade-in">
+                <i data-lucide="arrow-right" class="arrow-desktop"></i>
+                <i data-lucide="arrow-down" class="arrow-mobile"></i>
+            </div>
+            <div class="about-card glass active fade-in-up delay-100">
+                <i data-lucide="code-2" class="icon-lg"></i>
+                <h3>O Desenvolvedor</h3>
+                <p>Estudando intensamente para criar experiências digitais. Foco em código limpo, interfaces modernas e
+                    performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+        <h2 class="section-title fade-in">Arsenal Tecnológico</h2>
+        <div class="skills-grid">
+            <div class="skill-card glass fade-in-up" style="--delay: 0s">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card glass fade-in-up" style="--delay: 0.1s">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card glass fade-in-up" style="--delay: 0.2s">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card glass fade-in-up" style="--delay: 0.3s">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card glass fade-in-up" style="--delay: 0.4s">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                <h3>MySQL</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+        <h2 class="section-title fade-in">Projetos em Destaque</h2>
+
+        <div class="project-showcase glass fade-in-up">
+            <div class="project-content">
+                <span class="project-label">Full Stack App</span>
+                <h3>Polaco Barber System</h3>
+                <p>Um sistema completo de gestão para barbearias. Resolvi o problema de agendamentos manuais criando uma
+                    solução automatizada.</p>
+                <ul class="project-features">
+                    <li><i data-lucide="check-circle"></i> Agendamento Inteligente</li>
+                    <li><i data-lucide="check-circle"></i> Integração com WhatsApp</li>
+                    <li><i data-lucide="check-circle"></i> Gestão Financeira</li>
+                </ul>
+                <div class="tech-stack">
+                    <span>Node.js</span><span>Express</span><span>EJS</span><span>MySQL</span>
+                </div>
+                <div class="learning-stack">
+                    <p class="learning-label">Estudando & Aplicando:</p>
+                    <span>JWT</span><span>Bcrypt</span><span>Zod</span><span>Security Patterns</span>
+                </div>
+            </div>
+            <div class="project-visuals">
+                <img src="assets/dashboard_real.png" alt="Dashboard Barbearia" class="mockup-main">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer glass-top">
+        <div class="container footer-content">
+            <div class="footer-cta fade-in-up">
+                <h2>Vamos construir o futuro juntos?</h2>
+                <p>Estou pronto para migrar de área e dar o meu melhor no seu time.</p>
+                <a href="https://wa.me/5547991821554" target="_blank" class="btn btn-glow">Entre em Contato</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/anderson-gustavo-dias-kasmirski-19593433a/" target="_blank"
+                    aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://github.com/Lenny8585" target="_blank" aria-label="GitHub"><i
+                        data-lucide="github"></i></a>
+                <a href="mailto:reidohs99@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+            <p class="copyright">© 2025 Anderson Gustavo Dias Kasmirski. Feito com paixão e código.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
