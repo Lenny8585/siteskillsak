@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // Typing Effect
+
+    // Efeito de Digitação
     const textElement = document.getElementById('typing-text');
     const texts = ['Desenvolvedor Full Stack', 'Criador de Soluções', 'Entusiasta de Tecnologia'];
     let count = 0;
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         currentText = texts[count];
         letter = currentText.slice(0, ++index);
-        
+
         textElement.textContent = letter;
         textElement.style.color = '#00f0ff';
         textElement.style.fontWeight = 'bold';
@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (letter.length === currentText.length) {
             count++;
             index = 0;
-            setTimeout(type, 2000); // Wait before next word
+            setTimeout(type, 2000); // Espera antes da próxima palavra
         } else {
             setTimeout(type, 100);
         }
     })();
 
-    // Scroll Animations using Intersection Observer
+    // Animações de Rolagem usando 
     const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px"
@@ -38,8 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Optional: Stop observing once visible to run animation only once
-                 observer.unobserve(entry.target);
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -47,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.fade-in, .fade-in-up');
     animatedElements.forEach(el => observer.observe(el));
 
-    // Navbar Scroll Effect
+    // Efeito de Rolagem da Navbar
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -57,13 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile Menu Toggle (Basic implementation)
-    // For a real production site, we'd add a full overlay menu
+    // Alternância do Menu Mobile 
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    
+
     hamburger.addEventListener('click', () => {
-        // Simple toggle for demo - in real CSS would slide in
+        // Alternância simples para demonstração
         if (navLinks.style.display === 'flex') {
             navLinks.style.display = 'none';
         } else {

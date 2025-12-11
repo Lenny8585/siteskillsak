@@ -25,7 +25,7 @@ body {
     line-height: 1.6;
 }
 
-/* Background Glows */
+/* Brilhos de Fundo */
 .bg-glow {
     position: fixed;
     width: 600px;
@@ -143,7 +143,7 @@ body {
     cursor: pointer;
 }
 
-/* Hero Section */
+/* Seção Hero */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -231,7 +231,7 @@ h1 {
     color: var(--accent-blue);
 }
 
-/* Code Card Visual */
+/* Visual do Cartão de Código */
 .hero-visual {
     flex: 1;
     display: flex;
@@ -302,7 +302,7 @@ code {
     color: #bd93f9;
 }
 
-/* Sections Common */
+/* Seções Comuns */
 .section {
     padding: 100px 0;
 }
@@ -313,7 +313,7 @@ code {
     text-align: center;
 }
 
-/* About Section */
+/* Seção Sobre */
 .about-grid {
     display: flex;
     align-items: center;
@@ -361,7 +361,7 @@ code {
     color: var(--accent-purple);
 }
 
-/* Skills Grid */
+/* Grade de Habilidades */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -396,7 +396,7 @@ code {
     color: var(--text-secondary);
 }
 
-/* Project Showcase */
+/* Vitrine de Projetos */
 .project-showcase {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -484,7 +484,7 @@ code {
     position: relative;
     height: 400px;
     perspective: 1000px;
-    /* Enable 3D space */
+    /* Habilitar espaço 3D */
 }
 
 .mockup-main {
@@ -497,13 +497,13 @@ code {
     right: 0;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
     transform: rotateY(-12deg) rotateX(5deg);
-    /* The "Beautiful" 3D tilt */
+    /* Inclinação 3D */
     filter: brightness(0.9);
 }
 
 .project-showcase:hover .mockup-main {
     transform: rotateY(0) rotateX(0) scale(1.05);
-    /* Straighten on hover */
+    /* Endireitar ao passar o mouse */
     filter: brightness(1);
     box-shadow: 0 30px 60px -12px rgba(0, 240, 255, 0.15);
 }
@@ -514,7 +514,7 @@ code {
     transform: scale(1.02);
 }
 
-/* Footer */
+/* Rodapé */
 .footer {
     padding: 80px 0 30px;
     text-align: center;
@@ -563,7 +563,7 @@ code {
     color: #555;
 }
 
-/* Animations */
+/* Animações */
 .fade-in-up {
     opacity: 0;
     transform: translateY(30px);
@@ -575,7 +575,7 @@ code {
     transform: translateY(0);
 }
 
-/* Mobile Responsiveness */
+/* Responsividade Mobile */
 @media (max-width: 900px) {
     .hero {
         flex-direction: column;
